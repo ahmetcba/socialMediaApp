@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OurWork.NotesActivity">
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_classroom_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#000"
+        app:tabTextColor="#515151"
+        app:tabSelectedTextColor="#fff"
+        app:tabBackground="@color/colorPrimaryDark"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_classroom_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout_classroom_student"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/diary_row"
+        android:id="@+id/recyclervew_diary"
+        android:layout_above="@+id/cgc_linear_diary"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/cgc_linear_diary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#e2e2e2"
+        android:weightSum="5"
+        android:gravity="end"
+        >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/add_btn_diary"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            />
+
+        <ImageView
+            android:tint="@color/colorAccent"
+            android:id="@+id/lesson_cgc_diary"
+            android:src="@drawable/ic_baseline_lens_24"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:layout_gravity="end"
+            />
+        <ImageView
+            android:tint="@color/black"
+            android:id="@+id/menu_cgc_diary"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:layout_gravity="end"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/opened_menu_cgc_diary"
+        android:layout_above="@id/cgc_linear_diary"
+        android:visibility="gone"
+        android:background="#fff"
+        android:weightSum="5"
+        android:gravity="end"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            android:padding="10dp"
+            android:id="@+id/profile_menu_cgc_diary"
+            android:tint="@color/black"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="10dp"
+            app:civ_border_width="1dp"
+            android:id="@+id/schoolChat_menu_cgc_diary"
+            android:tint="@color/black"
+            android:src="@drawable/ic_baseline_school_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
