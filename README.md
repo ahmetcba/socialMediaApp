@@ -10,6 +10,9 @@ I destructed the code. I wanted to add this project to my portfolio, so i change
 
 If you want to have an idea about how i code android please dive in. 
 
-Directory for backend codes : 
-socialMediaApp/School_Chool-master/app/src/main/java/com/thisischool/chool/
+backend codes : 
+https://github.com/ahmetcba/socialMediaApp/tree/sharedVersion/School_Chool-master/app/src/main/java/com/thisischool/chool
+
+frontend codes :
+https://github.com/ahmetcba/socialMediaApp/tree/sharedVersion/School_Chool-master/app/src/main/res
 
